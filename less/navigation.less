@@ -5,7 +5,8 @@
     background-color: @nav-bg;
     border-bottom: .1rem solid @nav-border;
     width: 100%;
-    // overflow: hidden;
+    overflow: hidden;
+    
     .topH1
     {
         font-size: 4rem;
@@ -15,6 +16,41 @@
         padding-top: 1.3rem;
         padding-bottom: 2rem;
     }
+
+    @shuttleStop: 100vw;
+
+    .shuttleDiv
+    {
+    position: absolute;
+    top: .8rem;
+    .animShuttle
+    {
+        transform: rotateZ(90deg);
+        width: 5rem;   
+    }
+    animation-name: shuttleFly;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    }
+
+    @keyframes shuttleFly 
+    {
+    0%  { left:0; }
+    50% { left: @shuttleStop*.7; transform: rotateZ(0deg); }
+    100% { transform: rotateZ(-90deg); left: @shuttleStop*.7; }
+    }
+
+    @media @phone
+    {
+        @keyframes shuttleFly {
+        0%  { left:0; }
+        50% { left: @shuttleStop*.8; transform: rotateZ(0deg); }
+        100% { transform: rotateZ(-90deg); left: @shuttleStop*.8; }
+    }
+    }
+
+
     
     nav
     {

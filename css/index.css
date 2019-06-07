@@ -155,31 +155,6 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.shuttleDiv {
-  position: absolute;
-  top: 0.8rem;
-  animation-name: shuttleFly;
-  animation-duration: 6s;
-  animation-fill-mode: forwards;
-  overflow: hidden;
-}
-.shuttleDiv .animShuttle {
-  transform: rotateZ(90deg);
-  width: 5rem;
-}
-@keyframes shuttleFly {
-  0% {
-    left: 0;
-  }
-  50% {
-    left: 80vw;
-    transform: rotateZ(0deg);
-  }
-  100% {
-    transform: rotateZ(-90deg);
-    left: 80vw;
-  }
-}
 .container {
   max-width: 80rem;
   width: 100%;
@@ -189,6 +164,7 @@ p {
   background-color: #F6F6F6;
   border-bottom: 0.1rem solid #F1F1F1;
   width: 100%;
+  overflow: hidden;
 }
 .greyBGandBorder .topH1 {
   font-size: 4rem;
@@ -196,6 +172,46 @@ p {
   text-align: center;
   padding-top: 1.3rem;
   padding-bottom: 2rem;
+}
+.greyBGandBorder .shuttleDiv {
+  position: absolute;
+  top: 0.8rem;
+  animation-name: shuttleFly;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+.greyBGandBorder .shuttleDiv .animShuttle {
+  transform: rotateZ(90deg);
+  width: 5rem;
+}
+@keyframes shuttleFly {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 70vw;
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-90deg);
+    left: 70vw;
+  }
+}
+@media (max-width: 500px) {
+  @keyframes shuttleFly {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 80vw;
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(-90deg);
+      left: 80vw;
+    }
+  }
 }
 .greyBGandBorder nav {
   padding: 0 31.4rem 1.2rem 31.4rem;
