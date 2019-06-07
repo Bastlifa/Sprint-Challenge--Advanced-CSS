@@ -9,3 +9,18 @@
     align-items: @algnItms;
 }
 
+.signUpButton(@btnWidth:10rem; @btnHeight:3.5rem;)
+{
+    background-color: @btn-bg-color;
+    border: .05rem solid @btn-bg-color;
+    border-radius: .6rem;
+    color:white;
+    width: @btnWidth;
+    height: @btnHeight;
+    font-size: 1.8rem;
+    &:hover
+    {
+        background-color: white;
+        color: @btn-bg-color;
+    }
+}

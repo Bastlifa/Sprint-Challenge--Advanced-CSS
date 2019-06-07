@@ -1,6 +1,29 @@
 // Navigation code here
 
+.greyBGandBorder
+{
+    background-color: @nav-bg;
+    border-bottom: .1rem solid @nav-border;
+}
+
+.topH1
+{
+    font-size: 4rem;
+    color: @ebony-clay;
+    text-align: center;
+    // margin-top:1.3rem;
+    padding-top: 1.3rem;
+    padding-bottom: 2rem;
+}
+
 nav
 {
-    
+    padding: 0 @navPaddingLR 1.2rem @navPaddingLR;
+    .fbMixin();
+    a
+    {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color:@river-bend;
+    }
 }

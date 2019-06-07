@@ -156,9 +156,32 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 80rem;
   width: 100%;
   margin: 0 auto;
+}
+.greyBGandBorder {
+  background-color: #F6F6F6;
+  border-bottom: 0.1rem solid #F1F1F1;
+}
+.topH1 {
+  font-size: 4rem;
+  color: #23293B;
+  text-align: center;
+  padding-top: 1.3rem;
+  padding-bottom: 2rem;
+}
+nav {
+  padding: 0 31vw 1.2rem 31vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #454A59;
 }
 footer {
   color: #22283B;
@@ -211,6 +234,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn button {
+  background-color: #22283A;
+  border: 0.05rem solid #22283A;
+  border-radius: 0.6rem;
+  color: white;
+  width: 10rem;
+  height: 3.5rem;
+  font-size: 1.8rem;
+}
+.home .walk .walk-text .btn button:hover {
+  background-color: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
