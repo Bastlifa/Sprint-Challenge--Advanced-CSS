@@ -157,10 +157,11 @@ p {
 }
 .shuttleDiv {
   position: absolute;
-  top: 2rem;
+  top: 0.8rem;
   animation-name: shuttleFly;
   animation-duration: 6s;
   animation-fill-mode: forwards;
+  overflow: hidden;
 }
 .shuttleDiv .animShuttle {
   transform: rotateZ(90deg);
@@ -168,11 +169,15 @@ p {
 }
 @keyframes shuttleFly {
   0% {
-    padding-left: 0;
+    left: 0;
+  }
+  50% {
+    left: 80vw;
+    transform: rotateZ(0deg);
   }
   100% {
-    padding-left: 150%;
-    visibility: hidden;
+    transform: rotateZ(-90deg);
+    left: 80vw;
   }
 }
 .container {

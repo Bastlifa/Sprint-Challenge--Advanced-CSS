@@ -33,28 +33,29 @@ p {
 .shuttleDiv
   {
     position: absolute;
-    top: 2rem;
+    top: .8rem;
     .animShuttle
     {
+      // overflow: hidden;
       transform: rotateZ(90deg);
       width: 5rem;   
     }
     animation-name: shuttleFly;
     animation-duration: 6s;
     animation-fill-mode: forwards;
+    overflow: hidden;
   }
   @keyframes shuttleFly {
-    0%    {padding-left:0;}
-    // 12.5% {padding-left:12.5%;}
-    // 25%   {padding-left:25%;}
-    // 37.5% {padding-left:37.5%;}
-    // 50%   {padding-left:50%;}
-    // 62.5% {padding-left:62.5%;}
-    // 75%   {padding-left:75%;}
-    // 87.5% {padding-left:87.5%;}
-    // 99%   {padding-left:100%;}
-    100%  {padding-left: 150%; visibility: hidden;}
-    
+    // @media @phone
+    // {
+    //   0%  { left:0; }
+    //   50% { left: @shuttleStopMob; transform: rotateZ(0deg); }
+    //   100% { transform: rotateZ(-90deg); left: @shuttleStopMob; }
+    // }
+      0%  { left:0; }
+      50% { left: @shuttleStop; transform: rotateZ(0deg); }
+      100% { transform: rotateZ(-90deg); left: @shuttleStop; }
+      
   }
 
 
