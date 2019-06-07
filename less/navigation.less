@@ -4,26 +4,33 @@
 {
     background-color: @nav-bg;
     border-bottom: .1rem solid @nav-border;
-}
-
-.topH1
-{
-    font-size: 4rem;
-    color: @ebony-clay;
-    text-align: center;
-    // margin-top:1.3rem;
-    padding-top: 1.3rem;
-    padding-bottom: 2rem;
-}
-
-nav
-{
-    padding: 0 @navPaddingLR 1.2rem @navPaddingLR;
-    .fbMixin();
-    a
+    width: 100%;
+    .topH1
     {
-        text-decoration: none;
-        font-size: 1.5rem;
-        color:@river-bend;
+        font-size: 4rem;
+        color: @ebony-clay;
+        text-align: center;
+        // margin-top:1.3rem;
+        padding-top: 1.3rem;
+        padding-bottom: 2rem;
+    }
+    
+    nav
+    {
+        padding: 0 31.4rem 1.2rem 31.4rem;
+        // margin:0 @navPaddingLR 1.2rem @navPaddingLR;
+        
+        
+        .fbMixin(center);
+        a
+        {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color:@river-bend;
+        }
+        @media @phone
+        {
+            
+        }
     }
 }

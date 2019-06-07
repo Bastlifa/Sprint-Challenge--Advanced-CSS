@@ -163,22 +163,23 @@ p {
 .greyBGandBorder {
   background-color: #F6F6F6;
   border-bottom: 0.1rem solid #F1F1F1;
+  width: 100%;
 }
-.topH1 {
+.greyBGandBorder .topH1 {
   font-size: 4rem;
   color: #23293B;
   text-align: center;
   padding-top: 1.3rem;
   padding-bottom: 2rem;
 }
-nav {
-  padding: 0 31vw 1.2rem 31vw;
+.greyBGandBorder nav {
+  padding: 0 31.4rem 1.2rem 31.4rem;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: center;
   justify-content: space-between;
   align-items: center;
 }
-nav a {
+.greyBGandBorder nav a {
   text-decoration: none;
   font-size: 1.5rem;
   color: #454A59;
@@ -198,6 +199,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 0.8rem;
 }
 .home .space-images {
   display: flex;
